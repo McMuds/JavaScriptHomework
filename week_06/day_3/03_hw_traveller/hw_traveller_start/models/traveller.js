@@ -14,10 +14,13 @@ Traveller.prototype.getJourneyEndLocations = function () {
     return journey.endLocation
   });
   return result;
-
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
+  const result = this.journeys.filter((journey) => {
+    return journey.transport === transport
+  });
+  return result;
 
 };
 
