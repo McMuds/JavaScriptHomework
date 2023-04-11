@@ -5,8 +5,8 @@ import './App.css';
 function App() {
 
 const [toDoList, setToDoList] = useState([
-  {name: "Buy Shopping", priority: 'High'},
-  {name: "Clean House", priority: 'High'},
+  {name: "Buy Shopping", priority: 'high'},
+  {name: "Clean House", priority: 'high'},
   {name: "Wash Car", priority: 'low'},
 ])
 
