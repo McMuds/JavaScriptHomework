@@ -43,8 +43,8 @@ const WeatherBox = () => {
   const getWeather = function() {
     fetch(weatherAPI + SelectedCity)
     .then(resp => resp.json())
-    // .then(data => setWeather(data))
-    .then(data => console.log(data))
+    .then(data => setWeather(data))
+    console.log(Weather)
   }
   
   const selectContinent = ((continent)=>{
@@ -65,7 +65,7 @@ const WeatherBox = () => {
         <div>
           <CityPicker continents={continents}  countries={Countries} setContAsProp={selectContinent} setCityAsProp={selectCity}/>
         </div>
-        <DailyWeather/>
+        <DailyWeather weather={Weather} selectedcity={SelectedCity}/>
       </div>
       <Favourites/>
     </>

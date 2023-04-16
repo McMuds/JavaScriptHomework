@@ -1,7 +1,10 @@
-const DailyDetail = () => {
+const DailyDetail = ({weather}) => {
   return ( 
     <>
-      <h4>Daily Detail</h4>
+      <h6>Today's Detail</h6>
+      {weather.description}
+      {weather.temperature}
+      {weather.wind}
     </>
    );
 }
