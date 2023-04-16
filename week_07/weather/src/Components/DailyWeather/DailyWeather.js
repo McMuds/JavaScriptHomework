@@ -12,7 +12,6 @@ const DailyWeather = ({weather, selectedcity}) => {
       <div className="vert-container">
         <h4>Daily Weather for {selectedcity}</h4>
         <DailyDetail weather={weather}/>
-        
         <div>
           Three Day Forecast
           <ul>
