@@ -1,5 +1,4 @@
 import DailyDetail from '../DailyDetail/DailyDetail';
-import DailySummary from '../DailySummary/DailySummary';
 import './DailyWeather.css'
 const DailyWeather = ({weather, selectedcity}) => {
 
